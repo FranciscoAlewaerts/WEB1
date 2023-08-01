@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="txtNav">
+                <li class=""><a href="../index.html"><img src="../multimedia/logo.png" alt="" class="logoMain"></a></li>
+                <li class="liNav cHover"><a href="">CATEGORIAS</a>
+                    <ul class="categorias">
+                        <li class="liCat">CALZADO</li>
+                        <li class="liCat">HODDIES</li>
+                        <li class="liCat">REMERAS</li>
+                        <li class="liCat">ACCESORIOS</li>
+                    </ul>
+                </li>
+                    <li class="liNav"><a href="tablatalles.html">TABLA DE TALLES</a></li>
+                <li class="liNav"><a href="form.html">CONTACTO</a></li>
+                <li class="liNav"><a href="tablaD.html">STOCK</a></li>
+                <!-- MENU HAMBURGESA -->
+
+                <li onclick="mostrar_ocultar()" class="liNav menuHam"><img class="imgHam" src="../multimedia/menu_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <ul id="ulMenuHam">
+                        <li class="liMenuHam"><a href="../index.html">CATEGORIAS</a></li>
+                        <li class="liMenuHam"><a href="tablatalles.html">TABLA DE TALLES</a></li>
+                        <li class="liMenuHam"><a href="form.html">CONTACTO</a></li>
+                        <li class="liMenuHam"><a href="tablaD.html">STOCK</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="formulario">
+            <form action="" id="form">
+                <div class="tituloform">
+                    <h4 class="formh4">Formulario de Contacto</h4>
+                </div>
+                <input class="formnombre" type="text" name="nombre" value="" placeholder="Ingrese su Nombre" required maxlength="10">
+                <input class="formapellido" type="text" name="apellido" value="" placeholder="Ingrese su Apellido"
+                    required>
+                <input class="formtelefono" type="text" name="telefono" value="" placeholder="Ingrese su Telefono"
+                    required minlength="6" maxlength="12">
+                <input class="formcorreo" type="email" name="email" value=""
+                    placeholder="Ingrese su Correo Electronico" required>
+                <p class="formp">Desea recibir novedades por correo?</p>
+                <div class="btns">
+                    <input type="radio" name="recibir" value="si"> <label for="">Sí</label>
+                    <input type="radio" name="recibir" value="no"> <label for="">No</label>
+                </div>
+                <div>
+                    <h2 class="titlecaptcha">Complete el captcha</h2>
+                </div>
+                <div class="captcha">
+                    <input type="text" id="captcha" name="captcha">
+                </div>
+                    <div class="contbtns">
+                        <button id="btn-submit" type="submit" onclick="compruebaCaptcha()">Enviar</button>
+                    </div>
+            </div>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <ul class="txtNav">
+            <li class="">
+                <a class="" href="#"><img src="../Multimedia/instagram.png" class="imgNav" alt=""></a>
+            </li>
+            <li class="">
+                <a class="nav-link " href="#"><img src="../Multimedia/facebook.png" class="imgNav" alt=""></a>
+            </li>
+            <li class="">
+                <a class="nav-link" href="#"><img src="../Multimedia/twitter.png" class="imgNav" alt=""></a>
+            </li>
+            <li class="derechos">
+                <a class="">DERECHOS RESERVADOS &copy;</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

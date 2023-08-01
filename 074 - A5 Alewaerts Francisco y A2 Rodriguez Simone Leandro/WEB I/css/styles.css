@@ -1,0 +1,213 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../multimedia/fondo5.png);
+    margin: 0;
+    padding: 0;
+}
+
+
+  /* NAV */
+
+  header {
+    background-color: #1ab188;
+    padding: 0px 15px 0px 15px;
+    position: sticky;
+    top: 0;
+}
+
+  .txtNav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px 10px;
+}
+
+.imgNav {
+  width: 60%;
+  height: 60%;
+}
+.logoMain{
+  width: 8rem;
+  height: 2rem;
+}
+.linav{
+  margin-left: 5px;
+  margin-right: 5px ;
+}
+.categorias{
+  position: absolute;
+  width: 200px;
+  background-color: #1ab188;
+  list-style: none;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 0px 0px 20px 20px;
+  display: none;
+}
+.cHover:hover ul{
+  display: block;
+
+}
+
+.liCat{
+  margin: 5px  0px 5px;
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+} 
+
+  /* MENU HAMURGESA */
+
+.menuHam{
+  display: none;
+
+}
+#ulMenuHam{
+  flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-end;
+  
+
+}
+.liMenuHam{
+  margin-top: 1rem;
+}
+
+main{
+  margin-top: 10px;
+}
+footer {
+  background-color: #1ab188;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: #380066;
+  }
+  
+  /* Tabla */
+  table {
+    margin-left: 23%;
+    width: 60%;
+    padding-left: 2%;
+    background: linear-gradient(to bottom, #a2c5bc, #1ab188);
+    border-collapse: collapse;
+    margin-bottom: 70px;
+  }
+
+  table,
+  th,
+  td {
+      border: 3px solid rgb(0, 0, 0);
+      border-collapse: collapse;
+      border-style: solid;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid black;
+  }
+  
+  th {
+    font-weight: bold;
+    }
+  
+  /* Formulario */
+  form {
+    width: 80%;
+    padding-left: 40%;
+    margin-bottom: 3%;
+  }
+  
+  form label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  form input, form select {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #bff3e5;
+    font-weight: bold;
+  }
+
+  form select {
+    width: 51%;
+  }
+
+
+  #agregarElemento{
+    padding: 1%;
+    margin-left: 15%;
+  }
+
+
+  #crearAutomatico, #vaciarTabla, #agregarElemento, .btn-eliminar{
+      display: inline-block;
+      padding: 6px 10px;
+      border: solid black 2px;
+      border-radius: 4px;
+      background: linear-gradient(to bottom, #ff4545, #ff4141);
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 5px;
+  }
+
+
+  #btn-acciones{
+    margin-left: 23%;
+  }
+
+  #btn-agregar{
+    padding-left: 6%;
+  }
+
+  h1, table, form{
+    font-family: Arial, sans-serif;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .liNav{
+        display: none;
+    }
+    #ulMenuHam{
+        display: none;
+    }
+    .menuHam{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    
+    }
+    .logoMain{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 476px) {
+    .derechos{
+        display: none;
+    }
+
+}

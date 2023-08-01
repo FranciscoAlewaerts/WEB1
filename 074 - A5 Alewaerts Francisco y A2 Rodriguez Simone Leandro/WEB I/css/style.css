@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../multimedia/fondo5.png);
+}
+
+header {
+    background-color: #1ab188;
+    padding: 0px 15px 0px 15px;
+    position: sticky;
+    top: 0;
+}
+
+.txtNav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px 10px;
+}
+.categorias{
+    position: absolute;
+    width: 200px;
+    background-color: #1ab188;
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+    display: none;
+}
+
+.cHover:hover ul{
+    display: block;
+
+}
+
+.liCat{
+margin: 5px  0px 5px;
+}
+.linav{
+    margin-left: 5px;
+    margin-right: 5px ;
+}
+h1,
+h2 {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0 2%;
+
+}
+
+.tabProducto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    padding: 4% 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descript {
+    font-weight: bold;
+}
+
+.btn {
+    border: 0;
+    border-radius: 10px;
+    padding: 4% 4%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: #1ab188;
+    color: white;
+}
+
+.tabMarcas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background-color: #1ab188;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.imgNav {
+    width: 60%;
+    height: 60%;
+}
+
+img {
+    width: 10rem;
+    height: 13rem;
+}
+.imgMarcas{
+    width:  17%;
+    height: 20% ;
+}
+.imgHam{
+    width: 2rem;
+    height: 2rem;
+}
+
+.hym {
+    width: 17%;
+    height: 20%;
+}
+.logoMain{
+    width: 8rem;
+    height: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* TABLA */
+.tabla {
+    background-color: #1ab188;
+    margin-left: 25%;
+}
+
+
+table,
+th,
+td {
+    border: 10px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-style: double;
+}
+
+th {
+    font-size: 22px;
+}
+
+td {
+    font-size: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+
+}
+
+.td1 {
+    padding-left: 80px;
+
+}
+
+.td2 {
+    padding-left: 40px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: black;
+    font-size: 30px;
+    margin-top: 6%;
+}
+
+.contenedor {
+    margin-bottom: 20%;
+}
+
+/* MENU HAMURGESA */
+
+.menuHam{
+    display: none;
+
+}
+#ulMenuHam{
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-end;
+    
+
+}
+.liMenuHam{
+    margin-top: 1rem;
+}
+
+
+/* FORMULARIO */
+form {
+    padding-bottom: 10px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    background-color: #1ab188;
+    padding: 65px 45%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 20px solid #000;
+}
+
+
+.formnombre,
+.formapellido,
+.formtelefono,
+.formcorreo {
+    display: flex;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    background-color: #c4eff5;
+    padding: 10px;
+    margin: 12px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.formh4,
+.formp {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.formh4 {
+    display: flex;
+    text-decoration: underline;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.formp {
+    font-size: 18px;
+}
+
+#btn-submit {
+    display: flex;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #2afac6;
+    border: 3px solid black;
+    justify-content: center;
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contbtns {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+
+.btns {
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 35%;
+}
+
+.captcha {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.titlecaptcha {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#captcha {
+    background-color: rgb(187, 241, 214);
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#captcha {
+    border: 3px solid black;
+}
+
+/* TABLA DINAMICA */
+
+/*MOBILE*/
+
+@media only screen and (max-width: 1000px) {
+    .liNav{
+        display: none;
+    }
+    #ulMenuHam{
+        display: none;
+    }
+    .menuHam{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    
+    }
+    .logoMain{
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 476px) {
+    .derechos{
+        display: none;
+    }
+
+}
